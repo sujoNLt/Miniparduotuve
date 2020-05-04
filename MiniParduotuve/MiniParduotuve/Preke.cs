@@ -8,19 +8,8 @@ namespace MiniParduotuve
 {
     class Preke
     {
-        public string Pavadinimas { get; }
-        public double Kaina { get; }
-        public double DezPlotis { get; }
-        public double DezIlgis { get; }
-        public double DezAukstis { get; }
-
-        public Preke(string pavadinimas, double kaina, double dezPlotis, double dezIlgis, double dezAukstis)
-        {
-            Pavadinimas = pavadinimas;
-            Kaina = kaina;
-            DezPlotis = dezPlotis;
-            DezIlgis = dezIlgis;
-            DezAukstis = dezAukstis;
-        }
+        public string Pavadinimas { get; set; }
+        public double Kaina { get; set; }
+        public string Dydis { get; set; }
     }
 }
