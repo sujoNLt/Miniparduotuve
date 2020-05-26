@@ -358,7 +358,7 @@
             this.SiuntimoBudas.FormattingEnabled = true;
             this.SiuntimoBudas.Location = new System.Drawing.Point(12, 726);
             this.SiuntimoBudas.Name = "SiuntimoBudas";
-            this.SiuntimoBudas.Size = new System.Drawing.Size(268, 24);
+            this.SiuntimoBudas.Size = new System.Drawing.Size(292, 24);
             this.SiuntimoBudas.TabIndex = 31;
             this.SiuntimoBudas.SelectedValueChanged += new System.EventHandler(this.SiuntimoBudas_SelectedValueChanged);
             // 

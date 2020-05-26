@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
@@ -14,6 +9,7 @@ namespace MiniParduotuve
     public partial class Form1 : Form
     {
         private List<Preke> VisosPrekes;
+        string dydis;
 
         public Form1()
         {
@@ -100,7 +96,7 @@ namespace MiniParduotuve
                 string kaina = KainaTB.Text;
                 string kiekis = KiekisTB.Text;
                 string suma = SumaTB.Text;
-                string dydis = label10.Text;
+                dydis = label10.Text;
                 string[] eile = { pavadinimas, kaina, kiekis, suma, dydis };
                 PirkiniuKrepselis.Rows.Add(eile);
 
@@ -132,18 +128,10 @@ namespace MiniParduotuve
                 if (result == DialogResult.Yes)
                 {
                     double suma = Convert.ToDouble(PirkiniuKrepselis.SelectedRows[0].Cells["Suma"].Value.ToString());
-                    string dydis = PirkiniuKrepselis.SelectedRows[0].Cells["Dydis"].Value.ToString();
+                    dydis = PirkiniuKrepselis.SelectedRows[0].Cells["Dydis"].Value.ToString();
                     double kiekis = Convert.ToDouble(PirkiniuKrepselis.SelectedRows[0].Cells["Kiekis"].Value.ToString());
                     double galSum = Convert.ToDouble(GalutineSumaTB.Text);
 
-                    if (dydis == "M")
-                    {
-                        galSum -= kiekis * 1;
-                    }
-                    else if (dydis == "L")
-                    {
-                        galSum -= kiekis * 2;
-                    }
                     galSum -= suma;
                     GalutineSumaTB.Text = galSum.ToString();
 

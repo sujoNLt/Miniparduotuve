@@ -8,9 +8,9 @@ namespace MiniParduotuveUnitTesting
     public class UnitTest1
     {
         [TestMethod]
-        public void KiekisTB_TextChanged_SkaiciuojamaSuma_DuodamaKiekis2Kaina4_TikimasiGauti8()
+        public void SiuntimoIslaidos()
         {
-                
+           
         }
     }
 }
